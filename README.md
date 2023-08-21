@@ -5,11 +5,17 @@
 per compilare il codice :
 
 ```bash
-$gcc -Wall -Werror -O2 progetto.c -o progetto
+$ gcc -Wall -Werror -O2 progetto.c -o progetto
 ```
 
 per runnarlo con un particolare test:
 
 ```bash
-$input_test > ./progetto
+$ ./progetto < input_test > output_file
+```
+
+per conforntare il riultato ritornato con quello attesso:
+
+```bash
+$ diff output_file output_atteso
 ```
